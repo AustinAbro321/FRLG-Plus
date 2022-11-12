@@ -3895,7 +3895,9 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     if (gBattleMoves[gCurrentMove].effect == EFFECT_EXPLOSION)
         defense /= 2;
 
-    if (IS_TYPE_PHYSICAL(type))
+    //note here 
+    //if (IS_TYPE_PHYSICAL(type))
+    if(IS_MOVE_PHYSICAL(gCurrentMove)) 
     {
         if (gCritMultiplier == 2)
         {

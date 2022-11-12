@@ -314,4 +314,8 @@
 #define BATTLE_RUN_FORBIDDEN      1
 #define BATTLE_RUN_FAILURE        2
 
+#define SPLIT_PHYSICAL 0
+#define SPLIT_SPECIAL 1
+#define SPLIT_STATUS 2
+
 #endif // GUARD_CONSTANTS_BATTLE_H
